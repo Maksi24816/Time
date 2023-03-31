@@ -1,0 +1,183 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+body{display: flex; align-items: center; justify-content: center; background-color: black;}
+
+.ThankYou{position: absolute;top: 25px; width: 210px; height: 40px; border: 3px black solid; border-radius: 10px; font-size: 21px; text-align: center; padding-top: 6px; transition: all 0.3s ease 0s; background-color: antiquewhite;}
+.ThankYou:hover{box-shadow: 0 0 100px white;}
+
+.Pendulum{width: 60px; height: 333px; position: absolute; top: 114px; left: 109px; z-index: 4; display: flex; align-items: center; justify-content: center; animation: ease 1s all 0s; transform: rotate(0deg); animation: Ani 4s linear infinite;}
+.Cub40{background-color: rgb(228, 164, 46); width: 24px; height: 133px; position: absolute; top: 150px; left: 17px; z-index: 2;}
+.CubColo13{background-color: rgb(110, 72, 37); width:4px; height: 110px; position: absolute; top: 162px; left: 22px; border-radius: 20px; z-index: 3;}
+.CubColo14{background-color: rgb(110, 72, 37); width:4px; height: 110px; position: absolute; top: 162px; left: 32px; border-radius: 20px; z-index: 3;}
+.Colo9{background-color: rgb(228, 164, 46); width: 58px; height: 58px; position: absolute; top: 275px; left: 0px; border-radius: 50%; z-index: 4;}
+.Colo10{background-color: rgb(110, 72, 37);  width: 32px; height: 32px; position: absolute; top: 288px; left: 13px; border-radius: 50%; z-index: 5;}
+.Colo11{background-color: rgb(110, 72, 37); border: 2px rgb(31, 31, 31) solid; width: 11px; height: 11px; border-radius: 50%; position: absolute; z-index: 4;}
+.Colo13{background-color: rgb(228, 164, 46); position: absolute; top: 331px; left: 27px; width: 8px; height: 8px; border-radius: 50%; position: absolute; z-index: 7;}
+
+@keyframes Ani {
+	0%{transform: rotate(0deg);}
+	30%{transform: rotate(-12deg);}
+	50%{transform: rotate(0deg);}
+	80%{transform: rotate(12deg);}
+	100%{transform: rotate(0deg);}
+}
+
+.Timer{width: 127px; height: 127px; border: 3px rgb(99, 64, 32) solid; position: absolute; top: 201px; left: 75px; border-radius: 50%; z-index: 6; display: flex; align-items: center; justify-content: center;}
+
+.Arrow1{width: 9px; height: 99px; z-index: 6; transform: rotate(0deg);position: absolute;}
+.Colo12{background-color: rgb(34, 34, 34); border: 2px rgb(31, 31, 31) solid; width: 7px; height: 7px; border-radius: 50%; position: absolute; left: 1px; top: 9px; z-index: 6;}
+.Cub41{background-color: rgb(36, 36, 36); border: 1px rgb(31, 31, 31) solid; width: 3px; height: 30px; position: absolute; left: 3px; top: 14px; z-index: 4;}
+.Triangle1{width: 5px; height: 0; border-bottom: 12px black solid; border-left: 2px transparent solid; border-right: 2px transparent solid; position: absolute; left: 2px; top: -1px;}
+
+.Arrow2{width: 9px; height: 83px; z-index: 6; transform: rotate(60deg);position: absolute;}
+.Colo14{background-color: rgb(34, 34, 34); border: 2px rgb(31, 31, 31) solid; width: 7px; height: 7px; border-radius: 50%; position: absolute; left: 1px; top: 8px; z-index: 6;}
+.Cub42{background-color: rgb(36, 36, 36); border: 1px rgb(31, 31, 31) solid; width: 3px; height: 22px; position: absolute; left: 3px; top: 14px; z-index: 4;}
+.Triangle2{width: 5px; height: 0; border-bottom: 10px black solid; border-left: 2px transparent solid; border-right: 2px transparent solid; position: absolute; left: 2px; top: 1px;}
+
+.Arrow3{width: 9px; height: 67px; z-index: 6; transform: rotate(310deg);position: absolute;}
+.Colo16{background-color: rgb(34, 34, 34); border: 2px rgb(31, 31, 31) solid; width: 7px; height: 7px; border-radius: 50%; position: absolute; left: 1px; top: 9px; z-index: 6;}
+.Cub43{background-color: rgb(36, 36, 36); border: 1px rgb(31, 31, 31) solid; width: 3px; height: 14px; position: absolute; left: 3px; top: 14px; z-index: 4;}
+.Triangle3{width: 5px; height: 0; border-bottom: 8px black solid; border-left: 2px transparent solid; border-right: 2px transparent solid; position: absolute; left: 2px; top: 3px;}
+
+.Box{width: 280px; height: 600px; position: absolute; box-shadow: 0 0 100px antiquewhite;}
+.Box_Back{width: 400px; height: 750px; position: absolute; box-shadow: 0 0 100px antiquewhite; background-color: antiquewhite; border-radius: 15%;}
+.Cub1{background-color: rgb(172, 116, 64);width: 182px; height: 13px; border: 1px black solid; position: absolute; top: 42px; left: 46px; z-index: 3;}
+.Cub2{background-color: rgb(185, 125, 68); width: 256px; height: 10px; border: 1px black solid; position: absolute; top: 112px; left: 10px; z-index: 3;}
+.Cub3{background-color: rgb(179, 117, 59); width: 14px; height: 45px; border: 1px black solid; position: absolute; top: 68px; left: 66px; z-index: 3;}
+.Cub4{background-color: rgb(179, 117, 59); width: 14px; height: 45px; border: 1px black solid; position: absolute; top: 68px; left: 194px; z-index: 3;}
+.Cub5{background-color: rgb(138, 90, 46); width: 174px; height: 15px; border: 1px black solid; position: absolute; top: 54px; left: 50px; z-index: 3;}
+.Cub6{background-color: rgb(128, 84, 43); width: 116px; height: 45px; border: 1px black solid; position: absolute; top: 68px; left: 79px; z-index: 3;}
+.Cub7{background-color: rgb(139, 91, 46); width: 125px; height: 114px; border: 1px black solid; position: absolute; top: 150px; left: 75px; z-index: 5;}
+.Cub8{background-color: rgb(102, 66, 33); width: 125px; height: 217px; border: 1px black solid; position: absolute; top: 263px; left: 75px; z-index: 3;}
+.Cub9{background-color: rgb(146, 98, 54); width: 102px; height: 38px; border: 1px black solid; position: absolute; top: 479px; left: 86px; z-index: 5;}
+.Cub10{background-color: rgb(167, 109, 56); width: 51px; height: 38px; border: 1px black solid; position: absolute; top: 479px; left: 36px; z-index: 5;}
+.Cub11{background-color: rgb(167, 109, 56); width: 52px; height: 38px; border: 1px black solid; position: absolute; top: 479px; left: 187px; z-index: 3;}
+.Cub12{background-color: rgb(143, 90, 40); width: 27px; height: 28px; border: 1px black solid; position: absolute; top: 489px; left: 200px; z-index: 3;}
+.Cub13{background-color: rgb(143, 90, 40); width: 27px; height: 28px; border: 1px black solid; position: absolute; top: 489px; left: 47px; z-index: 6;}
+.Cub14{background-color: rgb(177, 116, 59); width: 241px; height: 25px; border: 1px black solid; position: absolute; top: 516px; left: 20px; z-index: 3;}
+.Cub15{background-color: rgb(167, 109, 56); width: 36px; height: 52px; border: 1px black solid; position: absolute; top: 150px; left: 199px; z-index: 5;}
+.Cub16{background-color: rgb(167, 109, 56); width: 36px; height: 52px; border: 1px black solid; position: absolute; top: 150px; left: 41px; z-index: 3;}
+.Cub17{background-color: rgb(136, 92, 51); width: 30px; height: 279px; border: 1px black solid; position: absolute; top: 201px; left: 47px; z-index: 8;}
+.Cub18{background-color: rgb(136, 92, 51); width: 30px; height: 279px; border: 1px black solid; position: absolute; top: 201px; left: 199px; z-index: 8;}
+.Cub19{background-color: rgb(143, 90, 40); width: 21px; height: 31px; border: 1px black solid; position: absolute; top: 160px; left: 46px; z-index: 3;}
+.Cub20{background-color: rgb(143, 90, 40); width: 21px; height: 31px; border: 1px black solid; position: absolute; top: 160px; left: 208px; z-index: 6;}
+.Cub21{background-color: rgb(150, 96, 46); width: 252px; height: 31px; border: 1px black solid; position: absolute; top: 121px; left: 12px; z-index: 3;}
+.Cub22{background-color: antiquewhite; width: 61px; height: 150px;position: absolute; top: 121px; left: -50px; z-index: 5;}
+.Cub23{background-color: antiquewhite; width: 61px; height: 150px;position: absolute; top: 121px; left: 266px; z-index: 5;}
+.Cub24{background-color: antiquewhite; width: 61px; height: 150px;position: absolute; top: 202px; left: 230px; z-index: 5;}
+.Cub25{background-color: antiquewhite; width: 61px; height: 150px;position: absolute; top: 202px; left: -15px; z-index: 5;}
+.Cub26{background-color: rgb(129, 81, 36); width: 57px; height: 23px;border: 1px black solid; position: absolute; top: 90px; left: 10px; z-index: 5;}
+.Cub27{background-color: rgb(129, 81, 36); width: 59px; height: 23px;border: 1px black solid; position: absolute; top: 90px; left: 207px; z-index: 5;}
+.Cub28{background-color: antiquewhite; width: 59px; height: 48px; position: absolute; top: 42px; left: 228px; z-index: 5;}
+.Cub29{background-color: antiquewhite; width: 59px; height: 40px; position: absolute; top: 50px; left: -13px; z-index: 5;}
+.Cub30{transform: rotate(-33deg); background-color: antiquewhite; width: 59px; height: 40px;border-bottom: 1px black solid;  position: absolute; top: 65px; left: -13px; z-index: 5;}
+.Cub31{transform: rotate(33deg); background-color: antiquewhite; width: 59px; height: 40px;border-bottom: 1px black solid;  position: absolute; top: 65px; left: 230px; z-index: 5;}
+.Cub32{background-color: antiquewhite; width: 59px; height: 40px; position: absolute; top: 100px; left: 266px; z-index: 5;}
+.Cub33{background-color: antiquewhite; width: 59px; height: 40px; position: absolute; top: 100px; left:-49px; z-index: 5;}
+.Cub34{background-color: antiquewhite; width: 250px; height: 50px; border-top: 1px black solid; position: absolute; top: 587px; left:15px; z-index: 2;}
+.Cub35{background-color: antiquewhite; width: 11px; height: 50px; border-top: 1px black solid; position: absolute; top: 580px; left:50px; z-index: 2;}
+.Cub36{background-color: antiquewhite; width: 10px; height: 50px; border-top: 1px black solid; position: absolute; top: 580px; left:224px; z-index: 2;}
+.Cub37{background-color: antiquewhite; width: 50px; height: 50px; position: absolute; top: 469px; left:210px; z-index: 2;}
+.Cub38{background-color: antiquewhite; width: 150px; height: 50px; position: absolute; top: 586px; left:167px; z-index: 2;}
+.Cub39{background-color: antiquewhite; width: 150px; height: 50px; position: absolute; top: 586px; left:-33px; z-index: 2;}
+.CubColo1{background-color: rgb(124, 80, 38); width: 7px; height: 272px; border: 1px black solid; position: absolute; top: 204px; left: 63px; border-radius: 3px; z-index: 9;}
+.CubColo2{background-color: rgb(124, 80, 38); width: 7px; height: 272px; border: 1px black solid; position: absolute; top: 204px; left: 51px; border-radius: 3px; z-index: 9;}
+.CubColo3{background-color: rgb(124, 80, 38); width: 7px; height: 272px; border: 1px black solid; position: absolute; top: 204px; left: 205px; border-radius: 3px; z-index: 9;}
+.CubColo4{background-color: rgb(124, 80, 38); width: 7px; height: 272px; border: 1px black solid; position: absolute; top: 204px; left: 217px; border-radius: 3px; z-index: 9;}
+.CubColo5{background-color: rgb(124, 80, 38); width: 92px; height: 6px; border: 1px black solid; position: absolute; top: 488px; left: 92px; border-radius: 3px; z-index: 6;}
+.CubColo6{background-color: rgb(124, 80, 38); width: 92px; height: 6px; border: 1px black solid; position: absolute; top: 500px; left: 92px; border-radius: 3px; z-index: 6;}
+.CubColo7{background-color: antiquewhite; width: 22px; height: 32px; border-bottom: 1px black solid; position: absolute; top: 66px; left: 44px; border-radius: 8px; z-index: 6;}
+.CubColo8{background-color: antiquewhite; width: 22px; height: 32px; border-bottom: 1px black solid; position: absolute; top: 66px; left: 208px; border-radius: 8px; z-index: 6;}
+.CubColo9{background-color: antiquewhite; width: 80px; height: 120px; border: 1px black solid; position: absolute; top: 121px; left: -38px; border-radius: 30px; z-index: 3;}
+.CubColo10{background-color: antiquewhite; width: 80px; height: 120px; border: 1px black solid; position: absolute; top: 121px; left: 234px; border-radius: 30px; z-index: 3;}
+.CubColo11{background-color: antiquewhite; width:36px; height: 36px; border: 1px black solid; position: absolute; top: 54px; left: 31px; border-radius: 20px; z-index: 3;}
+.CubColo12{background-color: antiquewhite; width:36px; height: 36px; border: 1px black solid; position: absolute; top: 54px; left: 208px; border-radius: 20px; z-index: 3;}
+.Colo1{background-color: rgb(146, 97, 50); width: 138px; height: 55px; border: 1px black solid; position: absolute; top: 16px; left: 68px; border-radius: 50%; z-index: 1;}
+.Colo2{background-color: rgb(124, 80, 38); width: 100px; height: 35px; border: 1px black solid; position: absolute; top: 30px; left: 86px; border-radius: 50%; z-index: 1;}
+.Colo3{background-color: rgb(158, 100, 46); width: 102px; height: 35px; border: 1px black solid; position: absolute; top: 73px; left: 86px; border-radius: 50%; z-index: 6;}
+.Colo4{background-color: rgb(161, 103, 48); width: 47px; height: 23px; border: 1px black solid; position: absolute; top: 164px; left: 113px; border-radius: 50%; z-index: 6;}
+.Colo5{background-color: rgb(145, 92, 43); width: 210px; height: 210px; border: 1px black solid; position: absolute; top: 425px; left: 37px; border-radius: 50%; z-index: 1;}
+.Colo6{background-color: antiquewhite; width: 60px; height: 60px; border: 1px black solid; position: absolute; top: 560px; left: 58px; border-radius: 50%; z-index: 1;}
+.Colo7{background-color: antiquewhite; width: 60px; height: 60px; border: 1px black solid; position: absolute; top: 560px; left: 166px; border-radius: 50%; z-index: 1;}
+.Colo8{background-color: antiquewhite; width: 127px; height: 127px; border: 3px rgb(99, 64, 32) solid; position: absolute; top: 200px; left: 74px; border-radius: 50%; z-index: 5;}
+
+.Figure1{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 209px; left: 141px; z-index: 5;}
+.Figure2{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 209px; left: 137px; z-index: 5;}
+.Figure3{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 209px; left: 131px; z-index: 5; transform: rotate(9deg);}
+.Figure4{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 209px; left: 131px; z-index: 5; transform: rotate(-18deg);}
+.Figure5{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 213px; left: 117px; z-index: 5; transform: rotate(-27deg);}
+.Figure6{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 215px; left: 111px; z-index: 5; transform: rotate(-21deg);}
+.Figure7{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 217px; left: 111px; z-index: 5; transform: rotate(-45deg);}
+.Figure8{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 229px; left: 100px; z-index: 5; transform: rotate(-45deg);}
+.Figure9{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 229px; left: 100px; z-index: 5; transform: rotate(-75deg);}
+.Figure10{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 253px; left: 91px; z-index: 5; transform: rotate(-90deg);}
+.Figure11{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 245px; left: 92px; z-index: 5; transform: rotate(-75deg);}
+.Figure12{width: 3px; height: 25px; background-color: rgb(192, 155, 31); position: absolute; top: 246px; left: 92px; z-index: 5; transform: rotate(-100deg);}
+.Figure13{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 215px; left: 162px; z-index: 5; transform: rotate(33deg);}
+.Figure14{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 233px; left: 176px; z-index: 5; transform: rotate(60deg);}
+.Figure15{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 228px; left: 175px; z-index: 5; transform: rotate(60deg);}
+.Figure16{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 248px; left: 181px; z-index: 5; transform: rotate(90deg);}
+.Figure17{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 253px; left: 181px; z-index: 5; transform: rotate(90deg);}
+.Figure18{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 258px; left: 181px; z-index: 5; transform: rotate(90deg);}
+.Figure19{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 269px; left: 178px; z-index: 5; transform: rotate(120deg);}
+.Figure20{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 273px; left: 176px; z-index: 5; transform: rotate(120deg);}
+.Figure21{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 277px; left: 174px; z-index: 5; transform: rotate(120deg);}
+.Figure22{width: 3px; height: 23px; background-color: rgb(192, 155, 31); position: absolute; top: 281px; left: 171px; z-index: 5; transform: rotate(120deg);}
+.Figure23{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 290px; left: 159px; z-index: 5; transform: rotate(145deg);}
+.Figure24{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 287px; left: 162px; z-index: 5; transform: rotate(125deg);}
+.Figure25{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 296px; left: 143px; z-index: 5; transform: rotate(164deg);}
+.Figure26{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 296px; left: 138px; z-index: 5; transform: rotate(185deg);}
+.Figure27{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 296px; left: 132px; z-index: 5; transform: rotate(185deg);}
+.Figure28{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 295px; left: 122px; z-index: 5; transform: rotate(200deg);}
+.Figure29{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 292px; left: 117px; z-index: 5; transform: rotate(220deg);}
+.Figure30{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 290px; left: 113px; z-index: 5; transform: rotate(220deg);}
+.Figure31{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 287px; left: 109px; z-index: 5; transform: rotate(220deg);}
+.Figure32{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 275px; left: 99px; z-index: 5; transform: rotate(251deg);}
+.Figure33{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 280px; left: 101px; z-index: 5; transform: rotate(224deg);}
+.Figure34{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 271px; left: 97px; z-index: 5; transform: rotate(251deg);}
+.Figure35{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 267px; left: 95px; z-index: 5; transform: rotate(251deg);}
+.Figure36{width: 3px; height: 24px; background-color: rgb(192, 155, 31); position: absolute; top: 263px; left: 93px; z-index: 5; transform: rotate(251deg);}
+
+
+.Cub44{width: 200px; height: 7px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 363px; left: 40px; transform: rotate(-46deg); z-index: 4;}
+.Cub45{width: 200px; height: 18px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 411px; left: 40px; transform: rotate(-45deg); z-index: 4;}
+.Cub46{width: 100px; height: 12px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 441px; left: 130px; transform: rotate(-46deg); z-index: 4;}
+.Cub47{width: 100px; height: 5px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 461px; left: 133px; transform: rotate(-46deg); z-index: 4;}
+.Cub48{width: 200px; height: 24px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 330px; left: 35px; transform: rotate(-45deg); z-index: 4;}
+.Cub49{width: 200px; height: 22px; background-color: rgba(240, 248, 255, 0.4); position: absolute; top: 240px; left: 35px; transform: rotate(-45deg); z-index: 4;}
+
+
