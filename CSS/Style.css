@@ -36,8 +36,12 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body{display: flex; align-items: center; justify-content: center; background-color: black;}
 
-.ThankYou{position: absolute;top: 25px; width: 210px; height: 40px; border: 3px black solid; border-radius: 10px; font-size: 21px; text-align: center; padding-top: 6px; transition: all 0.3s ease 0s; background-color: antiquewhite;}
+.ThankYou{position: absolute; top: 25px; width: 210px; height: 40px; border: 3px black solid; border-radius: 10px; font-size: 21px; text-align: center; padding-top: 6px; transition: all 0.3s ease 0s; background-color: antiquewhite;}
 .ThankYou:hover{box-shadow: 0 0 100px white;}
+
+@media (max-width:400px) {
+	.ThankYou{left: 100px;}
+}
 
 .Pendulum{width: 60px; height: 333px; position: absolute; top: 114px; left: 109px; z-index: 4; display: flex; align-items: center; justify-content: center; animation: ease 1s all 0s; transform: rotate(0deg); animation: Ani 4s linear infinite;}
 .Cub40{background-color: rgb(228, 164, 46); width: 24px; height: 133px; position: absolute; top: 150px; left: 17px; z-index: 2;}
@@ -74,7 +78,12 @@ body{display: flex; align-items: center; justify-content: center; background-col
 .Triangle3{width: 5px; height: 0; border-bottom: 8px black solid; border-left: 2px transparent solid; border-right: 2px transparent solid; position: absolute; left: 2px; top: 3px;}
 
 .Box{width: 280px; height: 600px; position: absolute; box-shadow: 0 0 100px antiquewhite;}
-.Box_Back{width: 400px; height: 750px; position: absolute; box-shadow: 0 0 100px antiquewhite; background-color: antiquewhite; border-radius: 15%;}
+.Box_Back{width: 400px; height: 750px; position: absolute; box-shadow: 0 0 100px antiquewhite; background-color: antiquewhite; border-radius: 15%;display: flex; align-items: center; justify-content: center;}
+
+@media (max-width:400px) {
+	.Box_Back{width: 400px; height: 750px; position: absolute; left: 0; box-shadow: 0 0 100px antiquewhite; background-color: antiquewhite; border-radius: 15%;}
+}
+
 .Cub1{background-color: rgb(172, 116, 64);width: 182px; height: 13px; border: 1px black solid; position: absolute; top: 42px; left: 46px; z-index: 3;}
 .Cub2{background-color: rgb(185, 125, 68); width: 256px; height: 10px; border: 1px black solid; position: absolute; top: 112px; left: 10px; z-index: 3;}
 .Cub3{background-color: rgb(179, 117, 59); width: 14px; height: 45px; border: 1px black solid; position: absolute; top: 68px; left: 66px; z-index: 3;}
